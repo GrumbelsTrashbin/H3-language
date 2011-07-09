@@ -9,8 +9,8 @@
 
 class Environment {
 	public:
-		virtual Environment insert(std::string name, Value value);
-		virtual Value lookup(std::string name);
+		virtual Environment insert(std::string name, Value value) { return Environment(); }
+		virtual Value lookup(std::string name) { return Value(); }
 };
 
 class NonEmptyEnvironment: public Environment {

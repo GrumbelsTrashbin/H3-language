@@ -9,7 +9,7 @@ class AST_constant;
 
 class Visitor {
 	public:
-		virtual Value visit(Environment environment, AST_constant node);
+		virtual Value visit(Environment environment, const AST_constant& node) { return Value(); }
 };
 
 #endif
